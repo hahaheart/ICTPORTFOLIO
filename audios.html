@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+         <title>Romualdo</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    img{
+        height: 20%;
+        width: 20%;
+        margin-left: 40%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        border-radius: 10%;
+    }
+
+
+</style>
+</head>
+<body>
+    <section class="audiosbg">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="videos.html">VIDEOS</a></li>
+                    <li><a href="audios.html">AUDIOS</a></li>
+                </ul>
+            </div>
+        </nav>
+   <div class="audios">
+        <h1>AUDIOS</h1>
+        <p> Click the image to play the music.
+        <br> This is a snippet of an original guitar riff i made.
+        <br>To me, it sounds like what it was like to learn coding throughout the school year.</p>
+            <br><br>
+            <p><b>"Star"</b></p>
+   
+    </div>
+    <img src="star.png" alt="Play Button" id="playButton" onclick="playAudio()">
+        <audio id="myAudio">
+            <source src="riff.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    <script>
+        function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+            }
+    </script>
+</html>
